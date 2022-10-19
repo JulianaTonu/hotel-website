@@ -1,0 +1,16 @@
+.navbar{
+    background-color: rgb(5, 50, 133) ;
+}
+.title{
+     color: aqua;
+     font-family: bold;
+     font-weight: bold;
+     font-size: 25px;
+}
+.nav{
+    color: aqua;
+    text-decoration: none;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 20px;
+}
