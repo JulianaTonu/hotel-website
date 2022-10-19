@@ -1,5 +1,6 @@
 import React from 'react';
 import './BookRoom.css'
+import { Link } from 'react-router-dom';
 
 
 const BookRoom = () => {
@@ -15,7 +16,10 @@ const BookRoom = () => {
       <div className="card-body">
         <h5 className="card-title">Single Room</h5>
         <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <Link to='/booking'>
         <button className='btn btn-info'>Book Now</button>
+        </Link>
+        
       </div>
     </div>
   </div>
@@ -25,7 +29,11 @@ const BookRoom = () => {
       <div className="card-body">
         <h5 className="card-title">Couple Room</h5>
         <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+        <Link to='/booking'>
         <button className='btn btn-info'>Book Now</button>
+        </Link>
+        
       </div>
     </div>
   </div>
@@ -35,7 +43,9 @@ const BookRoom = () => {
       <div className="card-body">
         <h5 className="card-title">Family Room</h5>
         <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <Link to='/booking'>
         <button className='btn btn-info'>Book Now</button>
+        </Link>
       </div>
     </div>
   </div>

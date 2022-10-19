@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Booking from "../components/Booking/Booking";
 import BookRoom from "../components/BookRoom/BookRoom";
 import Home from "../components/Home/Home";
 import Register from "../components/Register/Register";
@@ -17,8 +18,14 @@ export const routes = createBrowserRouter([
     
         {
             path:'/bookroom',
-            element:<PrivateRoute><BookRoom></BookRoom></PrivateRoute>
+            element:<BookRoom></BookRoom>
         },
+
+        {
+            path:'booking',
+            element:<PrivateRoute><Booking></Booking></PrivateRoute>
+        },
+
         {
             path:'/login',
             element:<Login></Login>
