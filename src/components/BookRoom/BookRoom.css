@@ -1,0 +1,11 @@
+.card{
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    width: 350px;
+    box-shadow: 4px 2px 2px gray;
+}
+
+h1{
+    color:  rgb(5, 50, 133);
+    text-shadow:2px 2px 2px  rgb(168, 197, 251);
+}
