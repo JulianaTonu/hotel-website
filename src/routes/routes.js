@@ -14,6 +14,7 @@ export const routes = createBrowserRouter([
             path:'/',
             element:<Home></Home>
         },
+    
         {
             path:'/bookroom',
             element:<PrivateRoute><BookRoom></BookRoom></PrivateRoute>

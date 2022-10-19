@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';git commit -m "first commit"
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -7,11 +7,13 @@ import Col from 'react-bootstrap/Col';
 
 import './Login.css'
 import login from '../../images/login.webp'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../UserContext/UserContext';
 
 const Login = () => {
 const {signIn} =useContext(AuthContext)
+const navigate =useNavigate()
+
   const handleSubmit=event =>{
     event.preventDefault()
     const form =event.target
@@ -23,6 +25,8 @@ const {signIn} =useContext(AuthContext)
     .then(result=>{
       const user =result.user 
       console.log('login user', user) 
+      form.reset('')
+      navigate('/')
     })
     .catch(error=>{
       console.error(error)
